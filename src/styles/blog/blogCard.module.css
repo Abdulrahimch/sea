@@ -1,0 +1,59 @@
+.cardContainer {
+  position: relative;
+}
+.cardImage {
+  width: 100%;
+  height: 303px;
+  border-radius: 20px;
+}
+.cardNumber {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 27px;
+  padding: 10px;
+}
+.cardBottom {
+  margin-top: 32px;
+  display: flex;
+  padding-bottom: 20px;
+}
+.cardTitle {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+}
+.cardCategory {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 110%;
+  margin-left: 20px;
+  background-color: #d9d9d9;
+  padding: 6px 20px 6px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+.time {
+  position: absolute;
+
+  color: #ffffff;
+  bottom: 115px;
+  right: 10px;
+  z-index: 100;
+}
+.time p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 110%;
+  text-transform: uppercase;
+}

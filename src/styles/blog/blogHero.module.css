@@ -1,0 +1,129 @@
+.container {
+  color: #000000;
+  overflow: hidden;
+  margin-top: 105px;
+}
+
+.topBlogContainer {
+  display: flex;
+  gap: 20px;
+}
+.topBlogTitle {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 53px;
+}
+.dateStyle {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 16px 0 20px 0;
+}
+.shortDetails {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+.readMore {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 100%;
+  cursor: pointer;
+  width: 150px;
+}
+.imgNumber {
+  width: 130px;
+  height: 147px;
+  background-color: #000000;
+  border-radius: 40px 0 40px 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imgNumber p {
+  color: #ffffff;
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+}
+.imgContainer {
+  position: relative;
+}
+.heroImage {
+  width: 644px;
+  height: 451px;
+  border-radius: 40px 0px 0px 40px;
+}
+@media only screen and (max-width: 40em) {
+  .container {
+    margin-top: 0;
+  }
+  .heroImage {
+    width: 100%;
+    height: auto;
+    border-radius: 40px;
+  }
+  .imgNumber {
+    width: 68px;
+    height: 77px;
+  }
+  .imgNumber p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+  }
+  .topBlogContainer {
+    flex-direction: column;
+    gap: 0;
+    border-bottom: 2px solid rgba(196, 196, 196, 0.68);
+    padding-bottom: 25px;
+  }
+  .topBlogTitle {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    margin-top: 35px;
+  }
+  .dateStyle {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+  }
+  .shortDetails {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+  }
+  .readMore {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .readMoreIcon {
+    margin-left: 13px;
+  }
+}

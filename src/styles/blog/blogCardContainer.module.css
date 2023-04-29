@@ -1,0 +1,119 @@
+.blogCardContainer {
+  color: black;
+  margin-top: 75px;
+}
+.headText {
+  display: flex;
+  align-items: center;
+}
+.headText h1 {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 39px;
+  line-height: 100%;
+  flex: 60%;
+}
+.headText p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 110%;
+  text-transform: uppercase;
+  flex: 40%;
+}
+.bottomPart {
+  display: flex;
+  margin: 70px 0;
+  align-items: center;
+}
+.buttonContainer {
+  display: flex;
+}
+.buttonLeft {
+  width: 44.55px;
+  height: 14.58px;
+  background-color: #d9d9d9;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.buttonRight {
+  width: 44.55px;
+  height: 14.58px;
+  background-color: black;
+  margin-left: 20px;
+  border-radius: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.bottomPart progress {
+  width: 85%;
+  margin-left: 35px;
+  background-color: #d9d9d9;
+  height: 5px;
+}
+.bottomPart progress::-webkit-progress-value {
+  background-color: black;
+  transition: width 0.3s ease-in-out;
+}
+.bottomPart progress::-webkit-progress-bar {
+  background-color: #d9d9d9;
+}
+.smallScreenCard {
+  display: none;
+}
+@media only screen and (max-width: 40em) {
+  .blogCardContainer {
+    margin-top: 25px;
+  }
+  .BigScreenCard {
+    display: none;
+  }
+  .smallScreenCard {
+    padding-bottom: 100px;
+    display: block;
+  }
+
+  .smallCardHeader {
+    font-family: "Helvetica Now Display Medium", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .btnStyle {
+    border: 1px solid #000000;
+    border-radius: 100px;
+    width: 212px;
+    height: 39px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 62px auto 0 auto;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+  }
+  .btnStyle p {
+    font-family: "Helvetica Now Display Medium", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 100%;
+  }
+  .btnStyle:hover {
+    background-color: rgba(3, 32, 248, 1);
+    color: white;
+    border: none;
+    transition: all 0.5s ease-in;
+  }
+}

@@ -1,0 +1,160 @@
+.cardContainer{
+  position: relative;
+  color: black;
+  width: 245px;
+  height: 310px;
+}
+.cardImgContainer{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border-radius: 40px;
+}
+.cardImgContainer .cardImage:hover, .cardImgContainer .cardImage:hover{
+    height: 115%;
+    width: 115%;
+
+}
+.cardBigContainer{
+  position: relative;
+  color: black;
+  width: 313.46px;
+  height: 397px;
+  
+  border-radius: 40px;
+}
+
+.cardIcon{
+  width: 47.13px;
+  height: 47.13px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.feature1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  position: absolute;
+  left: 15.39%;
+  right: 25.55%;
+  top: 37.85%;
+  bottom: 12.26%;
+  cursor: pointer;
+}
+
+.feature1_span{
+  width: 172.37px;
+  height: 64px;
+  color: #FFFFFF;
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0; 
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.319px;
+  line-height: 100%;
+}
+
+.cardImage {
+  width: 100%;
+  /*height: 303px;*/
+  border-radius: 20px;
+  cursor: pointer;
+  transition: height 1s,width 1s;
+}
+
+.BigCardNavigationItem{
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+.cardNavigationItem{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+/* olds*/
+.cardNumber {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 27px;
+  padding: 10px;
+}
+
+.cardBottom {
+     margin-top: 50px;
+    display: flex;
+    padding-bottom: 20px;
+    justify-content: center;
+}
+
+.bigCardBottom {
+  margin-top: 18px;
+  display: flex;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 110%;
+}
+
+.cardCategory {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 110%;
+  margin-left: 20px;
+  background-color: #d9d9d9;
+  padding: 6px 20px 6px 20px;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+.time {
+  position: absolute;
+  color: #ffffff;
+  bottom: 115px;
+  right: 10px;
+  z-index: 100;
+}
+.time p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 12px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.cardImageCustom {
+  position: relative;
+  color: black;
+  width: 313.46px;
+  height: 397px;
+  border-radius: 40px;
+  margin-left: 45px;
+}
+.swiper-backface-hidden{
+  height: 500px !important;
+}

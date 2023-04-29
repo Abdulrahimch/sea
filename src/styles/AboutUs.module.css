@@ -1,0 +1,29 @@
+.container{
+    background-image: url('../../public/assets/navbarBG.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+.aboutUs{
+    position: absolute;
+    padding: 2rem;
+    top: 7rem;
+    left:0;
+    right: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    color:#000000;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    overflow: hidden;
+    z-index: 100000;
+}
+/*breakpoint for mobile */
+@media (width <=600px) { 
+    .aboutUs{
+        margin-top: 2rem;
+        border-top-left-radius: 4rem;
+    border-top-right-radius: 4rem;
+    }
+}

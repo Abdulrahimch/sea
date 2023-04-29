@@ -1,0 +1,155 @@
+.about_us_footer {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 70vh;
+	z-index: 1;
+	overflow: hidden;
+	background-color: black;
+	width: 100%;
+	border-top-right-radius: 2rem;
+	border-top-left-radius: 2rem;
+	margin-bottom: 0;
+	color: white;
+ }
+ .line_through {
+	text-decoration: line-through;
+	text-decoration-thickness: 0.5rem;
+	text-decoration-color: gray;
+	transition: all 2s ease;
+ }
+ .company_word {
+	font-size: 6.25em;
+	color: var(--cimen-color);
+	letter-spacing: normal;
+ }
+ .mouvement_word {
+	font-size: 6.25em;
+	margin-top: -0.2em;
+ }
+ .footer_section_right {
+	display: flex;
+	flex-direction: column;
+	font-family: var(--helvetica-font-family);
+ }
+ .footer_section_left {
+	padding: 1rem;
+	font-family: var(--suisse-font-family);
+	word-spacing: -0.1em;
+ }
+ .footer_number {
+	display: flex;
+	width: 100%;
+	margin-bottom: 1rem;
+	margin-left: 1em;
+	color: var(--silver-color);
+   
+ }
+ .footer_number * {
+	font-size: .75rem;
+ }
+ .footer_sections {
+	display: flex;
+	justify-content: space-between;
+	padding: 2rem;
+	height: 100%;
+ }
+ .seaClubGoal {
+	display: flex;
+	flex-direction: column;
+	text-align: justify;
+	letter-spacing: normal;
+	margin-bottom: 0.5rem;
+	width: 20.2rem;
+	text-transform: uppercase;
+	font-size: 1em;
+	font-weight: 300;
+ }
+ .seaClubGoal > p:nth-child(2) {
+	margin-top: 1rem;
+ }
+ .seaClubGoal  {
+	margin-left: 4rem;
+ }
+ .seaClubGoal *{
+	font-weight: 300;
+	opacity: .9;
+ }
+ .move_company_word_left {
+	margin-left: -0.45em;
+	margin-top: -0.3em;
+ }
+ .move_mouvement_word_left {
+	margin-left: -1.4em;
+	margin-top: -0.3em;
+ }
+ /* for mobile */
+ @media (width<40em) {
+	.about_us_footer {
+		border-top-right-radius: 4rem;
+		border-top-left-radius: 4rem;
+	}
+	.footer_sections {
+		flex-direction: column;
+	}
+	.seaClubGoal {
+		margin-left: -3em;
+		font-size: 0.7em;
+		width: 15rem;
+	}
+	.company_word {
+		font-size: 7vh;
+		color: var(--cimen-color);
+		letter-spacing: normal;
+	}
+	.mouvement_word {
+		font-size: 7vh;
+		margin-top: -0.2em;
+	}
+	.footer_section_right {
+		position: absolute;
+		right: 0;
+		bottom: 3rem;
+	}
+	.footer_number {
+		margin-top: 3rem;
+		margin-left: 3rem;
+	}
+	.footer_number > span {
+		font-size: 0.8em;
+	}
+ }
+ /* for tablets and small laptops */
+ @media (width > 40em) {
+	.about_us_footer{
+		height: 60vh;
+	}
+	.footer_sections {
+		flex-direction: column;
+	}
+	.seaClubGoal {
+		margin-left: -2em;
+	}
+	.footer_number {
+		margin-top: 3rem;
+		margin-left: 5rem;
+	}
+	.company_word {
+		font-size: 9vh;
+		color: var(--cimen-color);
+		letter-spacing: normal;
+	}
+	.mouvement_word {
+		font-size: 9vh;
+		margin-top: -0.2em;
+	}
+	.footer_section_right {
+		position: absolute;
+		right: 0;
+		bottom: 3rem;
+	}
+ }
+ 

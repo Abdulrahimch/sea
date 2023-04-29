@@ -1,0 +1,67 @@
+.seaClub_team{
+    margin-top: 8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 50rem;
+  
+ }
+ .founders_team{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+   
+ }
+ .team_members, .designer_team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-content: center;
+    justify-self: center;
+ }
+ /*.eachMember:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / span 2;
+ }*/
+ 
+ 
+ .title{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    width: 100%;
+   
+ }
+ .team_title{
+    font-size: 6rem;
+    font-weight: 400;
+    font-family: var(--helvetica-font-family);
+ }
+ .icon_behavior{
+    cursor: pointer;
+ }
+ /*for small devices */
+ @media (width < 80em){
+    .seaClub_team{
+        margin-top: 15rem;
+    }
+    .team_title{
+        font-size: 2.1em;
+        font-weight: 500;
+    }
+    .icon_behavior{
+        width: 40px;
+    }
+    .team_members, .designer_team{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .eachMember:nth-last-child(1):nth-child(odd) {
+        grid-column: inherit;
+    }
+    .seaClub_team{
+        margin-bottom: 43rem;
+    }
+ }
+ 

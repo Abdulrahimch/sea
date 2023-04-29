@@ -1,0 +1,43 @@
+.container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 550px;
+  padding: 0 20px 130px 20px;
+}
+.text {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 60px;
+  text-align: left;
+  text-indent: 700px;
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+.title {
+  position: absolute;
+  top: 20px;
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  color: #ffffff;
+}
+@media only screen and (max-width: 40em) {
+  .container {
+    margin-top: 95px;
+    padding-bottom: 50px;
+  }
+  .text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 110%;
+    text-indent: 180px;
+  }
+  .title {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 110%;
+    top: 8px;
+  }
+}

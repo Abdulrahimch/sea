@@ -1,0 +1,125 @@
+.container {
+  height: 100vh;
+  position: relative;
+  overflow: visible;
+}
+.title {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 96px;
+  line-height: 100%;
+  color: #ffffff;
+  padding-top: 120px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.brandLogo {
+  width: 57.875rem;
+  height: 33.441rem;
+  margin-top: 170px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+.infoContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  padding: 0 20px;
+}
+.infoContainer p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+}
+
+.btnContainer {
+  display: flex;
+  flex: 50%;
+  justify-content: space-between;
+}
+.info {
+  flex: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.subtitle {
+  width: 98px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  margin-right: 10rem;
+}
+.lastInfo p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+}
+.lastInfo {
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 110%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 20px;
+}
+/* .imageContainer {
+  border: 1px solid green;
+} */
+@media only screen and (max-width: 1000px) {
+  .brandLogo {
+    width: 40rem;
+    height: 20rem;
+    margin-top: 300px;
+  }
+}
+@media only screen and (max-width: 42em) {
+  .container {
+    height: 100%;
+  }
+  .title {
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 100%;
+    width: 270px;
+    padding-top: 175px;
+  }
+  .btnContainer {
+    justify-content: center;
+  }
+  .btnContainer p {
+    display: none;
+  }
+  .infoContainer {
+    flex-direction: row-reverse;
+    margin-top: 115px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .subtitle {
+    margin-bottom: 60px;
+    margin-right: 0;
+  }
+  .imageContainer {
+    display: flex;
+    justify-content: center;
+  }
+  .brandLogo {
+    width: 235px;
+    height: 135.79px;
+    position: static;
+    transform: none;
+    margin-top: 55px;
+  }
+  .lastInfo {
+    position: static;
+    margin-top: 37px;
+  }
+}

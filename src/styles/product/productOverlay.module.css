@@ -1,0 +1,177 @@
+.overlayContainer {
+  position: absolute;
+  top: 0;
+  width: 90%;
+  transform: translateX(5%);
+  background-color: white;
+  border-radius: 40px 0px 0px 0px;
+  z-index: 200;
+  overflow: hidden;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease;
+  padding-bottom: 50px;
+}
+.detailsImage {
+  width: 100%;
+  height: auto;
+  border-radius: 40px 0px 0px 0px;
+}
+.ImageContainer {
+  position: relative;
+}
+.productNumber {
+  position: absolute;
+  width: 130px;
+  height: 147px;
+  left: 0px;
+  top: 0px;
+  background: #000000;
+  border-radius: 40px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.productNumber p {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title {
+  font-family: "Helvetica Now Text" sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 66px;
+  text-align: center;
+  margin: 60px 0 50px 0;
+}
+.firstText {
+  margin-bottom: 60px;
+}
+.paragraph {
+  margin-bottom: 20px;
+}
+.paragraph h2 {
+  margin-bottom: 40px;
+  font-weight: 500;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  /* or 29px */
+
+  letter-spacing: 0.02em;
+}
+.details {
+  padding: 0 112px;
+}
+.active {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.backContainer {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  width: 270px;
+  cursor: pointer;
+}
+.backContainer h4 {
+  font-family: "SuisseIntlMono-Regular", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 100%;
+}
+.btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  width: 45px;
+  height: 15px;
+  border-radius: 80px;
+  margin-right: 25px;
+}
+.arrowImage {
+  transform: rotate(-180deg);
+}
+.articleCard {
+  display: flex;
+  gap: 60px;
+  margin-top: 35px;
+}
+.articleContainer {
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+.articleContainer h6 {
+  font-family: "Helvetica Now Display Medium", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 44px;
+  text-align: end;
+}
+.time {
+  display: none;
+}
+.smallCardContainer {
+  display: none;
+}
+@media only screen and (max-width: 40em) {
+  .overlayContainer {
+    width: 100%;
+    transform: none;
+  }
+  .detailsImage {
+    border-radius: 40px;
+  }
+  .title {
+    font-size: 18px;
+    margin: 20px 0 0px 0;
+  }
+  .details {
+    padding: 0 30px;
+  }
+  .details p {
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .time {
+    font-family: "SuisseIntlMono-Regular", monospace;
+    display: block;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+  }
+  .productNumber {
+    width: 68px;
+    height: 77px;
+  }
+  .productNumber p {
+    font-size: 12px;
+    line-height: 100%;
+  }
+  .backContainer h4 {
+    font-size: 16px;
+    line-height: 100%;
+  }
+  .articleContainer {
+    display: none;
+  }
+  .smallCardContainer {
+    display: block;
+    padding: 60px 0;
+  }
+}

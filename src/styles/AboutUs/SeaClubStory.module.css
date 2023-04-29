@@ -1,0 +1,174 @@
+.story{
+  display: flex;
+  margin-top:2rem;
+  flex-direction: column;
+  padding:2rem;
+  width: 100%;
+  justify-content: space-between;
+  height: 45vh;
+  font-family: var(--helvetica-regular-font-family);
+  margin-bottom: 2vh;
+}
+.story_left_section{
+  display: flex;
+  flex-grow:1;
+  width:90%;
+}
+.story_right_section{
+display: flex;
+align-items:baseline;
+}
+.seaclub_full_story{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  min-height: 29vh;
+  font-size: 1.125em;
+  margin-left:6rem;
+}
+.seaclub_full_story > span{
+font-weight: 300;
+margin-bottom: 2vh;
+}
+.story_title{
+font-family: var(--suisse-font-family);
+width: 100%;
+object-fit: contain;
+text-transform: uppercase;
+margin-bottom: 1rem;
+font-size: .75em;
+}
+.full_box {
+width: 12.5rem;
+height: 12.5rem;
+border-radius: 50%;
+background: var(--keinBlue-color);
+}
+.mid_box {
+width: 11.875rem;
+height: 5.938rem;
+background: var(--keinBlue-color);
+border-radius: 10rem 10rem 0 0;
+transform: rotate(-90deg);
+position: absolute;
+right: 18.2rem;
+}
+.small_box {
+width: 9.375rem;
+height: 4.68rem;
+background: var(--keinBlue-color);
+border-radius: 10rem 10rem 0 0;
+transform: rotate(-360deg);
+position: absolute;
+right: 24.5rem;
+}
+.seaclub_logo_animation {
+display: flex;
+align-items: center;
+position: relative;
+justify-content: center;
+min-width: 30rem;
+}
+.seaclub_logo{
+  margin-top:10.5rem;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.seaclub_story{
+width: 100%;
+}
+.slash{
+position: relative;
+}
+.story_content{
+display: flex;
+width: 100%;
+}
+.title_slash{
+display: flex;
+justify-content: space-between;
+}
+.title_slash > span:nth-child(2){
+opacity: 0;
+}
+
+
+/*for mobile */
+@media (width <70em){
+.story{
+  margin-bottom: 13rem;
+  padding:0;
+}
+.seaclub_story{
+  width: auto;
+}
+.story_left_section{
+  width: 100%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.seaclub_logo{
+  margin-top: 6rem;
+
+}
+
+
+.story_content{
+  flex-direction: column-reverse;
+}
+.story_title{
+  font-size: .85em;
+  font-weight: 300;
+}
+.story_right_section{
+  flex-direction: column;
+}
+.seaclub_full_story{
+  margin-left:0;
+  font-size: 0.9375em;
+}
+.seaclub_full_story > span{
+  font-weight: 300;
+}
+.displaySlash{
+  display: none;
+}
+.title_slash{
+  margin-bottom: 2rem;
+}
+.title_slash > span:nth-child(2){
+  margin-right: 7rem;
+  opacity: 1;
+}
+.full_box {
+  width: 8rem;
+  height:8rem;
+  border-radius: 50%;
+  background: var(--keinBlue-color);
+
+
+}
+.mid_box {
+  width: 7.375rem;
+  height: 3.6875rem;
+  background: var(--keinBlue-color);
+  border-radius: 10rem 10rem 0 0;
+  transform: rotate(-90deg);
+  position: absolute;
+  right: 17.1rem;
+}
+.small_box {
+  width: 4.875rem;
+  height: 2.4375rem;
+  background: var(--keinBlue-color);
+  border-radius: 10rem 10rem 0 0;
+  transform: rotate(-360deg);
+  position: absolute;
+  right: 21.4rem;
+}
+.story_left_section{
+  margin-top:-5rem;
+}
+}
